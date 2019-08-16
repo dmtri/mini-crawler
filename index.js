@@ -34,7 +34,7 @@ exportCSV = () => {
 };
 
 const fetchUrl = async (url) => {
-    let res = null;
+    let res, body = null;
     try {
         res = await fetch(url);
         body = await res.text();
